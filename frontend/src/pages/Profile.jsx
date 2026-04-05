@@ -57,8 +57,14 @@ const Profile = () => {
 
   return (
     <div className="max-w-md mx-auto mt-20">
-      <form onSubmit={handleSubmit} className="bg-white p-6 shadow-md rounded">
-        <h1 className="text-2xl font-bold mb-4 text-center">Your Profile</h1>
+      <form
+        onSubmit={handleSubmit}
+        className="p-6 shadow-md rounded"
+        style={{ backgroundColor: '#B3CDE0' }}
+      >
+        <h1 className="text-2xl font-bold mb-4 text-center" style={{ color: '#1f3b57' }}>
+          Your Profile
+        </h1>
         <input
           type="text"
           placeholder="Name"
