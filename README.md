@@ -50,9 +50,5 @@ It allows users to register, log in, create feedback forms, edit existing forms,
 frontend/
 backend/
 .github/workflows/
- 
----
-
-**GitHub link of the starter project: **[https://github.com/nahaQUT/sampleapp_IFQ636.git](https://github.com/nahaQUT/sampleapp_IFQ636.git)
 
 ---
