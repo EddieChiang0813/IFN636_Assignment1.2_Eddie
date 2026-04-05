@@ -5,6 +5,6 @@ const axiosInstance = axios.create({
   baseURL: 'http://3.104.79.7:5001', // live
   headers: { 'Content-Type': 'application/json' },
 });
-
+ 
 export default axiosInstance;
  
