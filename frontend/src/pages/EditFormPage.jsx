@@ -145,7 +145,7 @@ export default function EditFormPage() {
       </form>
     </div>
   );
-}
+} 
 
 const styles = {
   page: {
