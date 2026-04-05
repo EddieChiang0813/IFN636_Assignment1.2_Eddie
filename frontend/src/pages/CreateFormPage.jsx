@@ -7,7 +7,7 @@ const emptyQuestion = () => ({
   questionText: '',
   questionType: 'text',
   options: ['']
-}); 
+});
 
 export default function CreateFormPage() {
   const [title, setTitle] = useState('');
