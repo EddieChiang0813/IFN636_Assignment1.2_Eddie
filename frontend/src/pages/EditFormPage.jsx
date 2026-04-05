@@ -234,7 +234,7 @@ export default function EditFormPage() {
       )}
     </div>
   );
-}
+} 
 
 const styles = {
   page: {
