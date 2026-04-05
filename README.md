@@ -43,6 +43,14 @@ It allows users to register, log in, create feedback forms, edit existing forms,
 - AWS EC2
 - PM2
 - Nginx
+  
+## Public URL
+http://3.104.79.7/
+
+## Demo Account
+If login is required to access the dashboard, use:
+- Email: henny123@gmail.com
+- Password: henny123
 
 ## Project Structure
 
