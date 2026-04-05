@@ -56,47 +56,52 @@ const Profile = () => {
   }
 
   return (
-    <div className="max-w-md mx-auto mt-20">
-      <form
-        onSubmit={handleSubmit}
-        className="p-6 shadow-md rounded"
-        style={{ backgroundColor: '#B3CDE0' }}
-      >
-        <h1 className="text-2xl font-bold mb-4 text-center" style={{ color: '#1f3b57' }}>
-          Your Profile
-        </h1>
-        <input
-          type="text"
-          placeholder="Name"
-          value={formData.name}
-          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="text"
-          placeholder="University"
-          value={formData.university}
-          onChange={(e) => setFormData({ ...formData, university: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <input
-          type="text"
-          placeholder="Address"
-          value={formData.address}
-          onChange={(e) => setFormData({ ...formData, address: e.target.value })}
-          className="w-full mb-4 p-2 border rounded"
-        />
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">
-          {loading ? 'Updating...' : 'Update Profile'}
-        </button>
-      </form>
+    <div
+      className="min-h-screen flex items-start justify-center pt-20"
+      style={{ background: 'linear-gradient(180deg, #eef7fb 0%, #f7fbfd 100%)' }}
+    >
+      <div className="w-full max-w-md px-4">
+        <form
+          onSubmit={handleSubmit}
+          className="p-6 shadow-md rounded"
+          style={{ backgroundColor: '#B3CDE0' }}
+        >
+          <h1 className="text-2xl font-bold mb-4 text-center" style={{ color: '#1f3b57' }}>
+            Your Profile
+          </h1>
+          <input
+            type="text"
+            placeholder="Name"
+            value={formData.name}
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            className="w-full mb-4 p-2 border rounded"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+            className="w-full mb-4 p-2 border rounded"
+          />
+          <input
+            type="text"
+            placeholder="University"
+            value={formData.university}
+            onChange={(e) => setFormData({ ...formData, university: e.target.value })}
+            className="w-full mb-4 p-2 border rounded"
+          />
+          <input
+            type="text"
+            placeholder="Address"
+            value={formData.address}
+            onChange={(e) => setFormData({ ...formData, address: e.target.value })}
+            className="w-full mb-4 p-2 border rounded"
+          />
+          <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">
+            {loading ? 'Updating...' : 'Update Profile'}
+          </button>
+        </form>
+      </div>
     </div>
   );
 };
